@@ -1,0 +1,34 @@
+{
+  "name": "minimap-tree-sitter-syntax",
+  "version": "1.0.0",
+  "description": "Minimap highlighting for tree sitter syntax",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tree",
+    "sitter",
+    "minimap",
+    "highlighting",
+    "syntax",
+    "atom"
+  ],
+  "author": "Steven Hobson-Campbell (xapphire13@live.com)",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "consumedServices": {
+    "minimap": {
+      "versions": {
+        "1.0.0": "consumeMinimapServiceV1"
+      }
+    },
+    "tree-sitter-syntax": {
+      "versions": {
+        "0.0.0": "consumeTreeSitterSyntaxBeta"
+      }
+    }
+  }
+}
